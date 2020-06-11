@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -38,7 +38,11 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/markdownit'
   ],
+  markdownit: {
+    injected: true,
+  },
   /*
   ** Build configuration
   */
@@ -48,5 +52,17 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  generate: {
+    routes: function() {
+      const fs = require('fs');
+      const path = require('path');
+      return fs.readdirSync('./assets/content/blog').map(file => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/blog/${file}`),
+        };
+      });
+    },
+  },
 }
