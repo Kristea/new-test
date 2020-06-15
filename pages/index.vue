@@ -5,6 +5,7 @@
       <h1 class="title">
         This is the home page!!
       </h1>
+      <nuxt-link to="/blog">Go to the blog</nuxt-link>
       <h2 class="subtitle">
         <nuxt-link to="/test">Go to the test page</nuxt-link>
       </h2>
