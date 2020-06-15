@@ -1,7 +1,7 @@
 <template>
   <article>
     <h1>{{blogPost.title}}</h1>
-    <div v-html="$md.render(blogPost.body)" />
+    <div>{{blogPost.body}}</div>
   </article>
 </template>
 <script>
@@ -11,7 +11,7 @@ export default {
     if (payload) return { blogPost: payload };
     else
       return {
-        blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
+        blogPost: await require(`~/assets/content/blog/2020-06-11-two.json`),
       };
   },
 };

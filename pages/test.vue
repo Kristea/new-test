@@ -3,11 +3,29 @@
     <div>
       <logo />
       <h1 class="title">
-        This is the home page!!
+        ls
       </h1>
       <h2 class="subtitle">
-        <nuxt-link to="/test">Go to the test page</nuxt-link>
+        My great Nuxt.js project
       </h2>
+
+      <nuxt-link to="/">Go to the home page</nuxt-link>
+      <div class="links">
+        <a
+          href="https://nuxtjs.org/"
+          target="_blank"
+          class="button--green"
+        >
+          Documentation
+        </a>
+        <a
+          href="https://github.com/nuxt/nuxt.js"
+          target="_blank"
+          class="button--grey"
+        >
+          GitHub
+        </a>
+      </div>
     </div>
   </div>
 </template>
