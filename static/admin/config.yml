@@ -13,6 +13,7 @@ media_library:
     default_transformations:
       - - fetch_format: auto
           quality: auto
+          width: auto
           crop: scale
 collections:
   - name: 'blog'
@@ -27,4 +28,5 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

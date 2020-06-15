@@ -5,6 +5,8 @@
 
         <h1 class="title is-1">{{blogPost.title}}</h1>
 
+        <img :data-src="blogPost.image" class="cld-responsive" alt="" />
+
         <div class="content" v-html="$md.render(blogPost.body)" />
       
       </div>
@@ -16,6 +18,8 @@
 
 <script>
 import page from '~/components/Page.vue'
+
+
 
 export default {
   components: {
@@ -33,5 +37,9 @@ export default {
         blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
       };
   },
+  mounted() {
+    cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
+    // cl.responsive()
+  }
 };
 </script>
