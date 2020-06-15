@@ -1,24 +1,20 @@
-
 <template>
-    <div>
-        <h1>hello!</h1>
-        <ul>
-            <li v-for="item in blogPosts" :key="item.date">
-                yo!
-            </li>
-        </ul>
-    </div>
+<div>
+  <h1>blogs</h1>
+  <li v-for="item in blogPosts" :key="item.date">
+    <nuxt-link :to="item.slug" append>
+    {{ item.title }}
+    </nuxt-link>
+  </li>
+</div>
 </template>
 
 <script>
-
 export default {
-    data: {
-        blogPosts = ['one', 'two']
+  computed: {
+    blogPosts() {
+      return this.$store.state.blogPosts;
     },
-//   computed: {
-//     blogPosts() {
-//       return this.$store.state.blogPosts;
-//     },
-//   },
+  },
 };
+</script>

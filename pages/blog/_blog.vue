@@ -4,14 +4,20 @@
     <div>{{blogPost.body}}</div>
   </article>
 </template>
-<script>
 
+<script>
 export default {
+  data() {
+    return {
+      blogPost: {}
+    }
+  },
   async asyncData({ params, payload }) {
-    if (payload) return { blogPost: payload };
-    else
+    // if (payload) return { blogPost: payload };
+    // else
       return {
         blogPost: await require(`~/assets/content/blog/2020-06-11-two.json`),
       };
   },
 };
+</script>
