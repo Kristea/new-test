@@ -1,12 +1,26 @@
 <template>
-  <article>
-    <h1>{{blogPost.title}}</h1>
-    <div>{{blogPost.body}}</div>
-  </article>
+  <page>
+    <template v-slot:main>
+      <div class="container">
+
+        <h1 class="title is-1">{{blogPost.title}}</h1>
+
+        <div class="content" v-html="$md.render(blogPost.body)" />
+      
+      </div>
+    </template>
+  </page>
 </template>
 
+
+
 <script>
+import page from '~/components/Page.vue'
+
 export default {
+  components: {
+    page
+  },
   data() {
     return {
       blogPost: {}

@@ -1,22 +1,20 @@
 <template>
-    <Nav />
+  <page>
+    <template v-slot:main>
+      <h1 class="title is-1">Here might be a page title. i've overriden the main slot.</h1>
+    </template>
+  </page>
 </template>
 
+
+
+
 <script>
-import Nav from '~/components/Nav.vue'
+import page from '~/components/Page.vue'
 
 export default {
-  // head() {
-  //   return {
-  //     script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-  //   };
-  // },
   components: {
-    Nav
+    page
   }
 }
 </script>
-
-<style>
-
-</style>
