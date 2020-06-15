@@ -1,18 +1,20 @@
 {
-  "name": "ls",
-  "version": "1.0.0",
-  "description": "My great Nuxt.js project",
-  "author": "andyxmas",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/markdownit": "^1.2.9",
-    "nuxt": "^2.0.0"
-  },
-  "devDependencies": {}
+    "name": "ls",
+    "version": "1.0.0",
+    "description": "My great Nuxt.js project",
+    "author": "andyxmas",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/markdownit": "^1.2.9",
+        "nuxt": "^2.0.0"
+    },
+    "devDependencies": {
+        "nuxt-buefy": "^0.3.31"
+    }
 }
