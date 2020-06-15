@@ -2,5 +2,5 @@
   "date": "2020-06-11T10:37:56.609Z",
   "title": "two",
   "description": "2222222",
-  "body": "this is **some** testing *text*"
+  "body": "this is **some** testing *text*\n\n# *heading one*\n\n### heading 3"
 }
