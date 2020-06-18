@@ -39,7 +39,6 @@ export default {
   },
   mounted() {
     cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
-    // cl.responsive()
   }
 };
 </script>

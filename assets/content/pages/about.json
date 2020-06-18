@@ -1,0 +1,16 @@
+{
+  "title": "About",
+  "intro": "this is the about page.",
+  "team": [
+    {
+      "name": "Andy",
+      "position": "Supremo",
+      "photo": "https://res.cloudinary.com/andyxmas/image/upload/c_scale,f_auto,q_auto,w_auto/v1592471661/andy-150_ti4bjc.jpg"
+    },
+    {
+      "name": "Bob",
+      "position": "Minion",
+      "photo": "https://res.cloudinary.com/andyxmas/image/upload/c_scale,f_auto,q_auto,w_auto/v1592476629/Bob-from-the-minions-movie_gfwxd4.jpg"
+    }
+  ]
+}
