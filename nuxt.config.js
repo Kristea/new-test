@@ -33,7 +33,11 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    'nuxt-buefy'
+      // Doc: https://buefy.github.io/#/documentation
+      'nuxt-buefy',
+      '@nuxtjs/pwa',
+      // Doc: https://github.com/nuxt/content
+      '@nuxt/content',
   ],
   /*
   ** Nuxt.js modules
@@ -44,6 +48,11 @@ export default {
   markdownit: {
     injected: true,
   },
+  /*
+  ** Content module configuration
+  ** See https://content.nuxtjs.org/configuration
+  */
+ content: {},
   /*
   ** Build configuration
   */
