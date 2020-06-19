@@ -16,16 +16,6 @@
                 Blog
             </b-navbar-item>
         </template>
-
-        <template slot="end">
-            <b-navbar-item href="/admin">
-                <div class="buttons">
-                    <a class="button is-light">
-                        Log in
-                    </a>
-                </div>
-            </b-navbar-item>
-        </template>
     </b-navbar>
 </template>
 
