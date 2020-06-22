@@ -26,10 +26,13 @@ export default {
   components: {
     page
   },
-  computed: {
-    blogPosts() {
-      return this.$store.state.blogPosts;
-    },
+  data () {
+    return {
+      blogPosts: []
+    }
   },
+  async fetch() {
+    this.blogPosts = await this.$content('blog').fetch()
+  }
 };
 </script>

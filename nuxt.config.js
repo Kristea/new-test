@@ -52,7 +52,9 @@ export default {
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
   */
- content: {},
+ content: {
+  dir: 'assets/content'
+ },
   /*
   ** Build configuration
   */
