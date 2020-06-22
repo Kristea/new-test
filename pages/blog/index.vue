@@ -4,6 +4,8 @@
       <div class="container">
 
         <h1 class="title is-1">blogs</h1>
+        <input v-model="searchParam" @keyup="searchBlogs">
+        <button @click="searchBlogs">Search</button>
           <ul>
             <li v-for="item in blogPosts" :key="item.date">
               <nuxt-link :to="item.slug" append>
@@ -28,7 +30,15 @@ export default {
   },
   data () {
     return {
-      blogPosts: []
+      blogPosts: [],
+      searchParam: ''
+    }
+  },
+  methods: {
+    async searchBlogs () {
+      let search = this.$content('blog')
+      search = this.searchParam != '' ? search.where({ title: this.searchParam }) : search
+      this.blogPosts = await search.fetch()
     }
   },
   async fetch() {
