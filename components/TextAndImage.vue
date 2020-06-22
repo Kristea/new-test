@@ -7,7 +7,7 @@
                 <nuxt-link v-if="cta" :to="cta.link">{{cta.text}}</nuxt-link>
             </div>
             <div class="column is-two-thirds">
-                <img :src="image.path" :alt="image.alt" />
+                <img :src="image" />
             </div>
         </div>
     </section>
@@ -26,17 +26,14 @@ export default {
         },
         cta: {
             type: Object,
-            default: {
+            default: () => ({
                 text: 'CTA text',
                 link: '#'
-            }
+            }),
         },
         image: {
-            type: Object,
-            default: {
-                path: 'https://picsum.photos/1200/600',
-                alt: 'Dummy image'
-            }
+            type: String,
+            default: 'https://picsum.photos/1200/600',
         }
     }
 }

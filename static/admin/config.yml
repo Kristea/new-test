@@ -36,6 +36,31 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: 'Home Page'
+        name: "index"
+        format: "json"
+        file: "assets/content/pages/index.json"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - label: "Slideshow"
+            name: "slideshow"
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Color, name: color, widget: select, options: ['white', 'black', 'light', 'dark', 'primary', 'info', 'success', 'warning', 'danger']}
+          - label: "Text and image"
+            name: "textAndImage"
+            widget: object
+            fields: 
+              - { label: Headline, name: headline, widget: string }
+              - { label: Content, name: content, widget: markdown }
+              - label: CTA
+                name: cta
+                widget: object
+                fields:
+                  - { label: Text, name: text, widget: string }
+                  - { label: Link, name: link, widget: string, hint: "this should be the relative path of the page on this site. e.g. /blog " }
+              - { label: Image, name: image, widget: image }
       - label: "About Page"
         name: "about"
         format: 'json'

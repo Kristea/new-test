@@ -6,7 +6,12 @@
         <Slideshow 
           :items="items"
         />
-        <TextAndImage />
+        <TextAndImage 
+          :headline="content.headline"
+          :content="content.content"
+          :cta="content.cta"
+          :image="content.image"
+        />
       </div>
     </template>
   </page>
@@ -28,13 +33,21 @@ export default {
   },
   data() {
     return {
-      items: 
-      [
-          { title: 'nrml 1', color: 'dark' },
-          { title: 'nrml 2', color: 'primary' },
-          { title: 'nrml 3', color: 'info' },
-      ]
+      items: [],
+      content: {}
     }
-  }
+  },
+  async asyncData({ params, payload }) {
+    // if (payload) return { blogPost: payload };
+    // else
+    let content = await require(`~/assets/content/pages/index.json`)
+    return {
+      items: content.slideshow,
+      content: content.textAndImage
+    }
+      // return {
+      //   content: await require(`~/assets/content/pages/index.json`),
+      // };
+  },
 }
 </script>
