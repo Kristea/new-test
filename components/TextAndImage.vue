@@ -7,7 +7,7 @@
                 <nuxt-link v-if="cta" :to="cta.link">{{cta.text}}</nuxt-link>
             </div>
             <div class="column is-two-thirds">
-                <img :src="image" />
+                <img :data-src="image" class="cld-responsive" alt="" />
             </div>
         </div>
     </section>
@@ -35,6 +35,9 @@ export default {
             type: String,
             default: 'https://picsum.photos/1200/600',
         }
-    }
+    },
+      mounted() {
+    cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
+  }
 }
 </script>
