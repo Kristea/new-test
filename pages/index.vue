@@ -2,7 +2,7 @@
   <page>
     <template v-slot:main>
       <div class="container">
-        <h1 class="title is-1">Here might be a page title. i've overriden the main slot.</h1>
+        <h1 class="title is-1">{{ pageContent.title }}</h1>
         <Slideshow 
           :items="items"
         />
@@ -31,19 +31,30 @@ export default {
     Slideshow,
     TextAndImage
   },
+  head() {
+    return {
+      title: this.pageContent.title + ' - ' + 'nrml',
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        { hid: 'description', name: 'description', content: 'My custom description' }
+      ]
+    }
+  },
   data() {
     return {
       items: [],
-      content: {}
+      content: {},
+      pageContent: {}
     }
   },
   async asyncData({ params, payload }) {
     // if (payload) return { blogPost: payload };
     // else
-    let content = await require(`~/assets/content/pages/index.json`)
+    let pageContent = await require(`~/assets/content/pages/index.json`)
     return {
-      items: content.slideshow,
-      content: content.textAndImage
+      items: pageContent.slideshow,
+      content: pageContent.textAndImage,
+      pageContent: pageContent
     }
       // return {
       //   content: await require(`~/assets/content/pages/index.json`),
