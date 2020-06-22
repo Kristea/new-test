@@ -3,6 +3,9 @@
     <template v-slot:main>
       <div class="container">
         <h1 class="title is-1">Here might be a page title. i've overriden the main slot.</h1>
+        <Slideshow 
+          :items="items"
+        />
       </div>
     </template>
   </page>
@@ -13,10 +16,22 @@
 
 <script>
 import page from '~/components/Page.vue'
+import Slideshow from '~/components/Slideshow'
 
 export default {
   components: {
-    page
+    page,
+    Slideshow
+  },
+  data() {
+    return {
+      items: 
+      [
+          { title: 'nrml 1', color: 'dark' },
+          { title: 'nrml 2', color: 'primary' },
+          { title: 'nrml 3', color: 'info' },
+      ]
+    }
   }
 }
 </script>
