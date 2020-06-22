@@ -6,6 +6,7 @@
         <Slideshow 
           :items="items"
         />
+        <TextAndImage />
       </div>
     </template>
   </page>
@@ -17,11 +18,13 @@
 <script>
 import page from '~/components/Page.vue'
 import Slideshow from '~/components/Slideshow'
+import TextAndImage from '~/components/TextAndImage'
 
 export default {
   components: {
     page,
-    Slideshow
+    Slideshow,
+    TextAndImage
   },
   data() {
     return {
