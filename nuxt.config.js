@@ -56,6 +56,9 @@ export default {
  content: {
   dir: 'assets/content'
  },
+ buefy: {
+   'materialDesignIcons': false
+ },
   /*
   ** Build configuration
   */
