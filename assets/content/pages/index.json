@@ -6,7 +6,8 @@
     "image": "/v1592476629/test/Bob-from-the-minions-movie_gfwxd4.jpg",
     "cta": {
       "text": "Go here! says forestry",
-      "link": "/blog"
+      "link": "/blog",
+      "select_link": "assets/content/pages/about.json"
     }
   },
   "slideshow": [
