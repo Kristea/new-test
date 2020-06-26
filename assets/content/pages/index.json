@@ -3,7 +3,7 @@
   "textAndImage": {
     "headline": "nrml headline from Forestry",
     "content": "nrml content from _forestry_",
-    "image": "/v1592476629/test/Bob-from-the-minions-movie_gfwxd4.jpg",
+    "image": "https://res.cloudinary.com/andyxmas/image/upload/v1592476629/test/v1592476629/test/Bob-from-the-minions-movie_gfwxd4.jpg",
     "cta": {
       "text": "Go here! says forestry",
       "link": "/blog"
