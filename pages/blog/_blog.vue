@@ -5,7 +5,7 @@
 
         <h1 class="title is-1">{{blogPost.title}}</h1>
 
-        <img :data-src="blogPost.image" class="cld-responsive" alt="" />
+        <nrmlImage :src="blogPost.image" />
 
         <div class="content" v-html="$md.render(blogPost.body)" />
       
@@ -18,6 +18,7 @@
 
 <script>
 import page from '~/components/Page.vue'
+import nrmlImage from '~/components/nrmlImage.vue'
 
 
 
@@ -32,7 +33,8 @@ export default {
     }
   },
   components: {
-    page
+    page,
+    nrmlImage
   },
   data() {
     return {
