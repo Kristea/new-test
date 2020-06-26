@@ -71,3 +71,5 @@ fields:
         required: false
       label: Link
     description: Call to action link
+pages:
+- assets/content/pages/index.json
