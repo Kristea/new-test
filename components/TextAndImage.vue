@@ -7,14 +7,21 @@
                 <nuxt-link v-if="cta" :to="cta.link">{{cta.text}}</nuxt-link>
             </div>
             <div class="column is-two-thirds">
-                <img :data-src="image" class="cld-responsive" alt="" />
+                <!-- <img :data-src="image" class="cld-responsive" alt="" /> -->
+                <nrmlImage :src="image" />
             </div>
         </div>
     </section>
 </template>
 
 <script>
+
+import nrmlImage from '~/components/nrmlImage.vue'
+
 export default {
+    components: {
+        nrmlImage,
+    },
     props: {
         headline: {
             type: String,
@@ -36,8 +43,5 @@ export default {
             default: 'https://picsum.photos/1200/600',
         }
     },
-      mounted() {
-    cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
-  }
 }
 </script>
