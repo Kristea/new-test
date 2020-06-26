@@ -4,37 +4,70 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
+  config:
+    required: true
+- type: field_group_list
+  name: slideshow
+  label: Slideshow
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - name: color
+    type: select
+    default: ''
+    config:
+      required: false
+      options:
+      - white
+      - black
+      - light
+      - dark
+      - primary
+      - info
+      - success
+      - warning
+      - danger
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Colour
+  config:
+    labelField: title
 - type: field_group
   name: textAndImage
   label: textAndImage
   fields:
   - type: text
     name: headline
-    label: headline
-  - type: text
-    name: content
-    label: content
+    label: Headline
+  - name: content
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Content
   - type: file
     name: image
-    label: image
+    label: Image
+    config:
+      maxSize: 1
   - type: field_group
     name: cta
-    label: cta
+    label: CTA
     fields:
     - type: text
       name: text
-      label: text
-    - type: text
-      name: link
-      label: link
-- type: field_group_list
-  name: slideshow
-  label: slideshow
-  fields:
-  - type: text
-    name: title
-    label: title
-  - type: text
-    name: color
-    label: color
+      label: Text
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
+    description: Call to action link
