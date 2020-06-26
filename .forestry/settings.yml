@@ -19,7 +19,7 @@ sections:
   templates:
   - blog-post
 upload_dir: test
-public_path: ''
+public_path: https://res.cloudinary.com/andyxmas/image/upload/v1592476629/test
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
