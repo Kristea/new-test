@@ -4,12 +4,12 @@
       "template": "showcase",
       "slides": [
         {
-          "title": "Slice slide #2",
-          "color": "warning"
-        },
-        {
           "title": "Slice slide #1",
           "color": "light"
+        },
+        {
+          "title": "Slice slide #2",
+          "color": "warning"
         }
       ]
     },
