@@ -1,0 +1,23 @@
+{
+  "slices": [
+    {
+      "template": "showcase",
+      "slides": [
+
+      ]
+    },
+    {
+      "template": "text-content",
+      "cta": {
+        "select_link": [
+
+        ],
+        "text": "",
+        "link": ""
+      },
+      "headline": "",
+      "content": "",
+      "image": ""
+    }
+  ]
+}
