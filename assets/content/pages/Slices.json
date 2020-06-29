@@ -19,12 +19,12 @@
         "select_link": [
 
         ],
-        "text": "",
-        "link": ""
+        "text": "Buy me!",
+        "link": "https://google.com"
       },
-      "headline": "",
-      "content": "",
-      "image": ""
+      "headline": "Headling the slices!",
+      "content": "Oh, this is perhaps the wrong type of text field?",
+      "image": "/daisy.jpg"
     }
   ]
 }
