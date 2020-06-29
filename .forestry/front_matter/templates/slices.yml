@@ -2,6 +2,11 @@
 label: Slices
 hide_body: true
 fields:
+- name: title_and_meta
+  type: include
+  config: {}
+  template: title-seo
+  label: Title & Meta
 - name: slices
   type: blocks
   label: Slices
