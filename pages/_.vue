@@ -2,7 +2,8 @@
   <page>
     <template v-slot:main>
       <div>
-        <component v-for="(slice, i) in pageContent.slices" 
+        <component 
+        v-for="(slice, i) in pageContent.slices" 
         :key="i" 
         :is="slice.template"
         :sliceContent="slice">
@@ -57,7 +58,9 @@ export default {
     }
   },
   async asyncData({ params, payload }) {
-    let pageContent = await require(`~/assets/content/pages/Slices.json`)
+    let path = params.pathMatch ? params.pathMatch : 'Home'
+    console.log('Path: ' + path)
+    let pageContent = await require(`~/assets/content/pages/${path}.json`)
     console.log(params)
     return {
       pageContent
