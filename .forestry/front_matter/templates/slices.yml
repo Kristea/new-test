@@ -5,7 +5,9 @@ fields:
 - name: slices
   type: blocks
   label: Slices
-  template_types: []
+  template_types:
+  - text-content
+  - showcase
   config:
     min: 
     max: 
