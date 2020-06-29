@@ -1,0 +1,17 @@
+{
+  "slices": [
+    {
+      "template": "text-content",
+      "cta": {
+        "select_link": [
+
+        ],
+        "text": "",
+        "link": ""
+      },
+      "headline": "Just another page",
+      "content": "with some content",
+      "image": ""
+    }
+  ]
+}
