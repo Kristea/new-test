@@ -2,6 +2,11 @@
 label: Slices
 hide_body: true
 fields:
+- name: title_and_meta
+  type: include
+  config: {}
+  template: title-seo
+  label: Title & Meta
 - name: slices
   type: blocks
   label: Slices
@@ -12,5 +17,5 @@ fields:
     min: 
     max: 
 pages:
-- assets/content/pages/Another Page !.json
 - assets/content/pages/Home.json
+- assets/content/pages/another.json
