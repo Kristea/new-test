@@ -33,14 +33,14 @@
 
 <script>
 import page from '~/components/Page.vue'
-import showcase from '~/components/Slideshow'
-import TextAndImage from '~/components/TextAndImage'
+// import showcase from '~/components/Slideshow'
+// import TextAndImage from '~/components/TextAndImage'
 
 export default {
   components: {
     page,
-    showcase,
-    TextAndImage
+    // showcase,
+    // TextAndImage
   },
   head() {
     return {
@@ -57,7 +57,7 @@ export default {
     }
   },
   async asyncData({ params, payload }) {
-    let pageContent = await require(`~/assets/content/pages/${params}.json`)
+    let pageContent = await require(`~/assets/content/pages/Slices.json`)
     console.log(params)
     return {
       pageContent
