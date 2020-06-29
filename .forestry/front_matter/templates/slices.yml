@@ -17,5 +17,5 @@ fields:
     min: 
     max: 
 pages:
-- assets/content/pages/Another Page !.json
 - assets/content/pages/Home.json
+- assets/content/pages/another.json
