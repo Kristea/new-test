@@ -2,10 +2,11 @@
   <page>
     <template v-slot:main>
       <div>
-        yo
-        {{ pageContent}}
-        <p v-for="slice in pageContent.slices" :key="slice.template">{{ slice.template}}</p>
-        <component v-for="slice in pageContent.slices" :key="slice._uid" :is="slice.template"></component>
+        <component v-for="(slice, i) in pageContent.slices" 
+        :key="i" 
+        :is="slice.template"
+        :sliceContent="slice">
+        </component>
         <!-- :key="story.slices._uid"  -->
       </div>
     </template>
@@ -56,8 +57,8 @@ export default {
     }
   },
   async asyncData({ params, payload }) {
-    let pageContent = await require(`~/assets/content/pages/Slices.json`)
-    console.log(pageContent)
+    let pageContent = await require(`~/assets/content/pages/${params}.json`)
+    console.log(params)
     return {
       pageContent
     }
