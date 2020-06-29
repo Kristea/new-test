@@ -12,4 +12,4 @@ fields:
     min: 
     max: 
 pages:
-- assets/content/pages/Slices.json
+- assets/content/pages/Home.json
