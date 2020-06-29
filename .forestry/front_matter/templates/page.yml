@@ -83,5 +83,3 @@ fields:
           path: 
       label: Select link
     description: Call to action link
-pages:
-- assets/content/pages/index.json
