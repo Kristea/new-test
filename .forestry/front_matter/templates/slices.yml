@@ -1,4 +1,11 @@
 ---
 label: Slices
 hide_body: true
-fields: []
+fields:
+- name: slices
+  type: blocks
+  label: Slices
+  template_types: []
+  config:
+    min: 
+    max: 
