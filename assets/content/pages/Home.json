@@ -26,5 +26,9 @@
       "content": "Oh, this is perhaps the wrong type of text field?",
       "image": "/daisy.jpg"
     }
-  ]
+  ],
+  "page_title": "Home",
+  "html_title": "The Normal Home",
+  "meta_description": "meta goes here",
+  "path": "/"
 }
