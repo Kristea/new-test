@@ -21,7 +21,6 @@ sections:
 - type: document
   path: assets/content/site-options.json
   label: Site Options
-  match: "**/*"
 upload_dir: test
 public_path: ''
 front_matter_path: ''
