@@ -6,6 +6,7 @@
     "private": true,
     "scripts": {
         "dev": "nuxt",
+        "develop": "nuxt",
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
@@ -13,12 +14,12 @@
         "serve": "nuxt serve"
     },
     "dependencies": {
-        "@nuxtjs/markdownit": "^1.2.9",
-        "cloudinary-core": "^2.8.2",
         "@nuxt/content": "^1.3.2",
+        "@nuxtjs/markdownit": "^1.2.9",
         "@nuxtjs/pwa": "^3.0.0-beta.20",
-        "nuxt": "^2.13.0",
-        "nuxt-buefy": "^0.3.31"
+        "buefy": "^0.8.20",
+        "cloudinary-core": "^2.8.2",
+        "nuxt": "^2.13.0"
     },
     "devDependencies": {
         "eslint-config-prettier": "^6.11.0",

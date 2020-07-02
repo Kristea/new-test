@@ -20,7 +20,7 @@ export default {
             return this.path + this.params + this.src
         }
     },
-    async mounted() {
+    mounted() {
         cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
     }
 }

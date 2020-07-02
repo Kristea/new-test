@@ -21,20 +21,31 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
+import { Carousel } from 'buefy'
+import 'buefy/dist/buefy.css'
+
+Vue.use(Carousel)
+
 export default {
     props: {
-        items: {
-            type: Array,
-            default: 
-            [
-                { title: 'Slide 1', color: 'dark' },
-                { title: 'Slide 2', color: 'primary' },
-                { title: 'Slide 3', color: 'info' },
-                { title: 'Slide 4', color: 'success' },
-                { title: 'Slide 5', color: 'warning' },
-                { title: 'Slide 6', color: 'danger' }
-            ]
+        sliceContent: {
+            type: Object
         }
+
+        // items: {
+        //     type: Array,
+        //     default: 
+        //     [
+        //         { title: 'Slide 1', color: 'dark' },
+        //         { title: 'Slide 2', color: 'primary' },
+        //         { title: 'Slide 3', color: 'info' },
+        //         { title: 'Slide 4', color: 'success' },
+        //         { title: 'Slide 5', color: 'warning' },
+        //         { title: 'Slide 6', color: 'danger' }
+        //     ]
+        // }
     },
     data() {
         return {
@@ -47,7 +58,7 @@ export default {
             repeat: true,
             pauseType: 'is-primary',
             interval: 3000,
-            carousels: this.items
+            carousels: this.sliceContent.slides
         }
     },
     methods: {

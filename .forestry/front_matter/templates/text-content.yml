@@ -1,0 +1,46 @@
+---
+label: Text & Content
+hide_body: true
+fields:
+- type: text
+  name: headline
+  label: Headline
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
+- type: file
+  name: image
+  label: Image
+  config:
+    maxSize: 1
+- type: field_group
+  name: cta
+  label: CTA
+  fields:
+  - type: text
+    name: text
+    label: Text
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: select_link
+    type: select
+    default: []
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: pages
+        file: 
+        path: 
+    label: Select link
+  description: Call to action link

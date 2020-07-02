@@ -1,0 +1,38 @@
+---
+label: Showcase
+hide_body: true
+fields:
+- name: slides
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: color
+    type: select
+    default: []
+    config:
+      required: false
+      options:
+      - white
+      - black
+      - light
+      - dark
+      - primary
+      - info
+      - success
+      - warning
+      - danger
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Colour
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slides

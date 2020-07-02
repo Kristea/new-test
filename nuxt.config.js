@@ -29,13 +29,15 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/components',
+    '~/plugins/filters'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
       // Doc: https://buefy.github.io/#/documentation
-      'nuxt-buefy',
+      // 'nuxt-buefy',
       '@nuxtjs/pwa',
       // Doc: https://github.com/nuxt/content
       '@nuxt/content',
@@ -74,12 +76,26 @@ export default {
     routes: function() {
       const fs = require('fs');
       const path = require('path');
-      return fs.readdirSync('./assets/content/blog').map(file => {
+      let blogRoutes = fs.readdirSync('./assets/content/blog').map(file => {
         return {
           route: `/blog/${path.parse(file).name}`, // Return the slug
           payload: require(`./assets/content/blog/${file}`),
         };
       });
+
+      let pageRoutes = fs.readdirSync('./assets/content/pages').map(file => {
+        return {
+          route: `/${path.parse(file).name}`, // Return the slug
+          payload: require(`./assets/content/pages/${file}`),
+        };
+      });
+
+      let homePageRoute = {
+        route: `/`, // Return the slug
+        payload: require(`./assets/content/pages/Home.json`),
+      }
+
+      return blogRoutes.concat(pageRoutes, homePageRoute)
     },
   },
 }

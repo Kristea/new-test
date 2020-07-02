@@ -1,0 +1,34 @@
+{
+  "slices": [
+    {
+      "template": "showcase",
+      "slides": [
+        {
+          "title": "Slice slide #1",
+          "color": "light"
+        },
+        {
+          "title": "Slice slide #2",
+          "color": "warning"
+        }
+      ]
+    },
+    {
+      "template": "text-content",
+      "cta": {
+        "select_link": [
+
+        ],
+        "text": "Buy me!",
+        "link": "https://google.com"
+      },
+      "headline": "Headling the slices!",
+      "content": "Oh, this is perhaps the wrong type of text field?",
+      "image": "/v1593508674/test/joshua-earle--87JyMb9ZfU-unsplash_qivonc.jpg"
+    }
+  ],
+  "page_title": "Home",
+  "html_title": "The Normal Home",
+  "meta_description": "meta goes here",
+  "path": "/"
+}

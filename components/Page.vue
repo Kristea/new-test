@@ -9,6 +9,7 @@
 </template>
 
 <script>
+import 'buefy/dist/buefy.css'
 import Nav from '~/components/Nav.vue'
 
 export default {

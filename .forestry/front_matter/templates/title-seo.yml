@@ -1,0 +1,30 @@
+---
+label: Title & SEO
+hide_body: true
+fields:
+- name: page_title
+  type: text
+  config:
+    required: false
+  label: Page Title
+- name: html_title
+  type: text
+  config:
+    required: false
+  label: HTML Title
+- name: meta_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Meta Description
+- name: path
+  type: text
+  config:
+    required: true
+  label: Path
+  description: The relative URL at which the content will be accessible.
+  default: "/"

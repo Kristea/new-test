@@ -20,7 +20,12 @@
 </template>
 
 <script>
+
+import Vue from 'vue'
 import Logo from '~/components/Logo.vue'
+import { Navbar } from 'buefy'
+
+Vue.use(Navbar)
 
 export default {
   components: {
