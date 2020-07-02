@@ -1,5 +1,12 @@
 <template>
-    <img :data-src="full_url" class="cld-responsive" alt="" />
+    <!-- <img :data-src="full_url" class="cld-responsive" alt="" /> -->
+
+    <cld-image
+
+        :publicId="src">
+    </cld-image>
+
+
 </template>
 
 <script>
@@ -21,7 +28,7 @@ export default {
         }
     },
     mounted() {
-        cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
+        // cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
     }
 }
 </script>
