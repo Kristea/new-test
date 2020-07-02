@@ -1,11 +1,12 @@
 <template>
-    <!-- <img :data-src="full_url" class="cld-responsive" alt="" /> -->
 
     <cld-image
-
-        :publicId="src">
+        dpr="auto"
+        responsive="width"
+        width="auto"
+        crop="scale"
+        :publicId="publicID">
     </cld-image>
-
 
 </template>
 
@@ -16,19 +17,10 @@ export default {
             type: String
         }
     },
-    data() {
-        return {
-            path: 'https://res.cloudinary.com/andyxmas/image/upload/',
-            params: 'c_scale,f_auto,q_auto,w_auto'
-        }
-    },
     computed: {
-        full_url() {
-            return this.path + this.params + this.src
+        publicID () {
+            return this.src.substring(1) // removing the leading forward slash
         }
-    },
-    mounted() {
-        // cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
     }
 }
 </script>
