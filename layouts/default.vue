@@ -12,4 +12,9 @@ Vue.use(Cloudinary, {
   components: [ CldImage ]
 });
 
+import 'buefy/dist/buefy.css'
+
+export default {
+
+}
 </script>

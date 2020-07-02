@@ -54,9 +54,6 @@ export default {
         pageContent: await require(`~/assets/content/pages/about.json`),
       };
   },
-  mounted() {
-    cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
-  }
 
 }
 </script>
