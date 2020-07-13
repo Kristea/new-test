@@ -1,7 +1,7 @@
 
 export default {
   mode: 'universal',
-  // target: 'static',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -65,6 +65,7 @@ export default {
   ** Build configuration
   */
   build: {
+    analyze: true,
     /*
     ** You can extend webpack config here
     */
