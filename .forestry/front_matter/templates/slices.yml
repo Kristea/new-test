@@ -19,3 +19,4 @@ fields:
 pages:
 - assets/content/pages/Home.json
 - assets/content/pages/another.json
+- assets/content/pages/folder/cool-new-page.json

@@ -1,0 +1,21 @@
+{
+  "path": "/",
+  "page_title": "A cool new page",
+  "html_title": "A cool new page",
+  "meta_description": "A cool new page",
+  "slices": [
+    {
+      "template": "text-content",
+      "cta": {
+        "select_link": [
+
+        ],
+        "text": "",
+        "link": ""
+      },
+      "headline": "yo!",
+      "content": "contnet goes here :-D",
+      "image": ""
+    }
+  ]
+}
