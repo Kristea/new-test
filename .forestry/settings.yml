@@ -18,6 +18,9 @@ sections:
   new_doc_ext: json
   templates:
   - blog-post
+- type: document
+  path: assets/content/site-options.json
+  label: Site Options
 upload_dir: test
 public_path: ''
 front_matter_path: ''
