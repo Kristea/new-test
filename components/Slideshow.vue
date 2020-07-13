@@ -24,7 +24,6 @@
 
 import Vue from 'vue'
 import { Carousel } from 'buefy'
-import 'buefy/dist/buefy.css'
 
 Vue.use(Carousel)
 

@@ -48,8 +48,5 @@ export default {
         blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
       };
   },
-  mounted() {
-    cloudinary.Cloudinary.new({cloud_name: "andyxmas"}).responsive()
-  }
 };
 </script>

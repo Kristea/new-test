@@ -21,3 +21,10 @@ fields:
     schema:
       format: markdown
   label: Meta Description
+- name: path
+  type: text
+  config:
+    required: true
+  label: Path
+  description: The relative URL at which the content will be accessible.
+  default: "/"
