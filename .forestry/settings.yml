@@ -15,7 +15,7 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
-  new_doc_ext: ''
+  new_doc_ext: app
   templates:
   - blog-post
 - type: document
