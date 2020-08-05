@@ -29,8 +29,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/components',
-    '~/plugins/filters'
+    '~/plugins/slices',
+    // '~/plugins/filters'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -56,12 +56,13 @@ export default {
   dir: 'assets/content'
  },
   styleResources: {
-   // WARNING - DO NOT IMPORT ACTUALL CSS STYLES HERE! They would be imported into EVERY component!!
+   // WARNING - DO NOT IMPORT ACTUAL CSS STYLES HERE! They would be imported into EVERY component!!
     // https://github.com/nuxt-community/style-resources-module#warning
    sass: [
      "bulma/sass/utilities/_all.sass"
    ]
   },
+  components: true,
   /*
   ** Build configuration
   */

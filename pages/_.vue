@@ -3,9 +3,9 @@
     <template v-slot:main>
       <div>
 
-        <component 
-        v-for="(slice, i) in pageContent.slices" 
-        :key="i" 
+        <component
+        v-for="(slice, i) in pageContent.slices"
+        :key="i"
         :is="slice.template"
         :sliceContent="slice">
         </component>
@@ -19,11 +19,11 @@
 
 
 <script>
-import page from '~/components/Page.vue'
+// import page from '~/components/Page.vue'
 
 export default {
   components: {
-    page,
+    // 'text-and-image': () => import("~/slices/TextAndImage")
   },
   head() {
     return {
