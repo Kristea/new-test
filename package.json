@@ -1,24 +1,22 @@
 {
-    "name": "ls",
-    "version": "1.0.0",
-    "description": "My great Nuxt.js project",
-    "author": "andyxmas",
+    "name": "katasite",
+    "version": "0.1.0",
+    "description": "The starting point for kata sites",
+    "author": "flocc",
     "private": true,
     "scripts": {
         "dev": "nuxt",
-        "develop": "nuxt",
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "export": "nuxt export",
         "serve": "nuxt serve"
     },
     "dependencies": {
-        "@nuxt/content": "^1.5.3",
-        "@nuxtjs/markdownit": "^1.2.10",
-        "@nuxtjs/style-resources": "^1.0.0",
-        "bulma": "^0.9.0",
-        "cloudinary-vue": "^1.1.1",
+        "@nuxt/content": "^1.5.*",
+        "@nuxtjs/markdownit": "^1.2.*",
+        "@nuxtjs/style-resources": "^1.0.*",
+        "bulma": "^0.9.*",
+        "cloudinary-vue": "^1.1.*",
         "nuxt": "^2.14.*"
     },
     "devDependencies": {
