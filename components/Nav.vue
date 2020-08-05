@@ -1,31 +1,30 @@
 <template>
-    <b-navbar wrapper-class="container">
-        <template slot="brand">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                <Logo />
-            </b-navbar-item>
-        </template>
-        <template slot="start">
-            <b-navbar-item tag="router-link" :to="{ path: '/' }">
-                Home
-            </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/about' }">
-                About
-            </b-navbar-item>
-            <b-navbar-item tag="router-link" :to="{ path: '/blog' }">
-                Blog
-            </b-navbar-item>
-        </template>
-    </b-navbar>
+  <div>
+
+    <n-link to="/">
+      <Logo />
+    </n-link>
+
+    <ul>
+      <li>
+        <n-link to="/">Home</n-link>
+      </li>
+
+      <li>
+        <n-link to="/about">About</n-link>
+      </li>
+
+      <li>
+        <n-link to="/blog">Blog</n-link>
+      </li>
+    </ul>
+
+  </div>
 </template>
 
 <script>
 
-import Vue from 'vue'
 import Logo from '~/components/Logo.vue'
-import { Navbar } from 'buefy'
-
-Vue.use(Navbar)
 
 export default {
   components: {

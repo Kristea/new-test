@@ -12,9 +12,13 @@ Vue.use(Cloudinary, {
   components: [ CldImage ]
 });
 
-import 'buefy/dist/buefy.css'
+
 
 export default {
 
 }
 </script>
+
+<style lang="sass">
+  @import "bulma/sass/grid/columns.sass";
+</style>

@@ -8,7 +8,7 @@
         <nrmlImage :src="blogPost.image" />
 
         <div class="content" v-html="$md.render(blogPost.body)" />
-      
+
       </div>
     </template>
   </page>
@@ -50,3 +50,7 @@ export default {
   },
 };
 </script>
+
+<style lang="sass">
+  @import "bulma/sass/elements/content.sass";
+</style>

@@ -36,11 +36,8 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-      // Doc: https://buefy.github.io/#/documentation
-      // 'nuxt-buefy',
-      '@nuxtjs/pwa',
-      // Doc: https://github.com/nuxt/content
-      '@nuxt/content',
+      '@nuxt/content', // Doc: https://github.com/nuxt/content
+    '@nuxtjs/style-resources',
   ],
   /*
   ** Nuxt.js modules
@@ -58,9 +55,13 @@ export default {
  content: {
   dir: 'assets/content'
  },
- buefy: {
-   'materialDesignIcons': false
- },
+  styleResources: {
+   // WARNING - DO NOT IMPORT ACTUALL CSS STYLES HERE! They would be imported into EVERY component!!
+    // https://github.com/nuxt-community/style-resources-module#warning
+   sass: [
+     "bulma/sass/utilities/_all.sass"
+   ]
+  },
   /*
   ** Build configuration
   */
@@ -73,29 +74,5 @@ export default {
     }
   },
   generate: {
-    // routes: function() {
-    //   const fs = require('fs');
-    //   const path = require('path');
-    //   let blogRoutes = fs.readdirSync('./assets/content/blog').map(file => {
-    //     return {
-    //       route: `/blog/${path.parse(file).name}`, // Return the slug
-    //       payload: require(`./assets/content/blog/${file}`),
-    //     };
-    //   });
-    //
-    //   let pageRoutes = fs.readdirSync('./assets/content/pages').map(file => {
-    //     return {
-    //       route: `/${path.parse(file).name}`, // Return the slug
-    //       payload: require(`./assets/content/pages/${file}`),
-    //     };
-    //   });
-    //
-    //   let homePageRoute = {
-    //     route: `/`, // Return the slug
-    //     payload: require(`./assets/content/pages/Home.json`),
-    //   }
-    //
-    //   return blogRoutes.concat(pageRoutes, homePageRoute)
-    // },
   },
 }

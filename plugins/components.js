@@ -1,6 +1,5 @@
 import Vue from 'vue'
 
-import Slideshow from '~/components/Slideshow'
 import TextAndImage from '~/components/TextAndImage'
 // import Page from '~/components/Page.vue'
 // import Teaser from '~/components/Teaser.vue'
@@ -12,5 +11,4 @@ import TextAndImage from '~/components/TextAndImage'
 // Vue.component('blok-grid', Grid)
 // Vue.component('blok-feature', Feature)
 
-Vue.component('showcase', Slideshow)
 Vue.component('text-content', TextAndImage)
