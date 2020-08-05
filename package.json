@@ -15,8 +15,10 @@
         "@nuxt/content": "^1.5.*",
         "@nuxtjs/markdownit": "^1.2.*",
         "@nuxtjs/style-resources": "^1.0.*",
+        "@weflocc/kata-text-and-image": "^1.0.0",
         "bulma": "^0.9.*",
         "cloudinary-vue": "^1.1.*",
+        "kataslice-test": "git+https://github.com/weflocc/kata-test-slice.git",
         "nuxt": "^2.14.*"
     },
     "devDependencies": {

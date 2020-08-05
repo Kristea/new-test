@@ -11,7 +11,10 @@
         </component>
 
       </div>
+
+      <test-slice></test-slice>
     </template>
+
   </page>
 </template>
 
@@ -19,12 +22,9 @@
 
 
 <script>
-// import page from '~/components/Page.vue'
 
 export default {
-  components: {
-    // 'text-and-image': () => import("~/slices/TextAndImage")
-  },
+
   head() {
     return {
       title: this.pageContent.title + ' - ' + 'nrml',
