@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 // Vue.component('text-and-image', () => import("~/slices/TextAndImage"))
-Vue.component('text-and-image', () => import("kata-text-and-image"))
+Vue.component('text-and-image', () => import("@weflocc/kata-text-and-image"))
 Vue.component('test-slice', () => import("kataslice-test"))
 
 // import TextAndImage from '~/components/TextAndImage'
