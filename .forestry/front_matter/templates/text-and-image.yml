@@ -40,7 +40,7 @@ fields:
       source:
         type: pages
         section: pages
-        file:
-        path:
+        file: 
+        path: 
     label: Select link
   description: Call to action link
