@@ -1,0 +1,3 @@
+[submodule "text-and-image"]
+	path = text-and-image
+	url = git@github.com:weflocc/text-and-image.git
