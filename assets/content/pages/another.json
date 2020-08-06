@@ -1,7 +1,7 @@
 {
   "slices": [
     {
-      "template": "text-content",
+      "template": "text-and-image",
       "cta": {
         "select_link": [
 
