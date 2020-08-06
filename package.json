@@ -19,7 +19,8 @@
         "bulma": "^0.9.*",
         "cloudinary-vue": "^1.1.*",
         "kataslice-test": "git+https://github.com/weflocc/kata-test-slice.git",
-        "nuxt": "^2.14.*"
+        "nuxt": "^2.14.*",
+        "vue": "^2.6.11"
     },
     "devDependencies": {
         "eslint-config-prettier": "^6.11.0",
