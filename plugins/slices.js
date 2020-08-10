@@ -1,7 +1,8 @@
 import Vue from 'vue'
 
 Vue.component('k-text-and-image', () => import("@weflocc/kata-text-and-image"))
-// Vue.component('text-and-image', () => import("~/slices/k-text-and-image/src/k-text-and-image"))
+// Vue.component('k-text-and-image', () => import("~/slices/k-text-and-image/src/k-text-and-image"))
+//
 Vue.component('test-slice', () => import("kataslice-test"))
 Vue.component('k-footer', () => import("@weflocc/kata-footer"))
 

@@ -8,7 +8,7 @@ import Vue from "vue";
 import Cloudinary, { CldImage } from "cloudinary-vue";
 
 Vue.use(Cloudinary, {
-  configuration: { cloudName: "andyxmas" },
+  configuration: { cloudName: "floccimages" },
   components: [ CldImage ]
 });
 
