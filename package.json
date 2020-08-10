@@ -15,6 +15,7 @@
         "@nuxt/content": "^1.5.*",
         "@nuxtjs/markdownit": "^1.2.*",
         "@nuxtjs/style-resources": "^1.0.*",
+        "@weflocc/kata-footer": "^1.0.2",
         "@weflocc/kata-text-and-image": "^1.0.0",
         "bulma": "^0.9.*",
         "cloudinary-vue": "^1.1.*",

@@ -13,6 +13,8 @@
       </div>
 
       <test-slice></test-slice>
+
+      <k-footer />
     </template>
 
   </page>
