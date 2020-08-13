@@ -13,14 +13,21 @@
 
         <h2>Contained, full image, two thirds img, one third text</h2>
         <KTextLeftImgRight :Container="true" :full-img="true" :img-width="66" :text-width="33" />
+
+        <h2>Full Width Image, Text Overlay right</h2>
+        <KFullWidthImageTextOverlay text-position="right" />
+
+        <h2>Full Width Image, Text Overlay center</h2>
+        <KFullWidthImageTextOverlay text-position="center" />
     </div>
 </template>
 
 <script>
     import KTextLeftImgRight from "../components/text-and-image/KTextLeftImgRight";
     import KImgLeftTextRight from "../components/text-and-image/KImgLeftTextRight";
+    import KFullWidthImageTextOverlay from "../components/text-and-image/KFullWidthImageTextOverlay";
 
     export default {
-        components: {KTextLeftImgRight, KImgLeftTextRight}
+        components: {KTextLeftImgRight, KImgLeftTextRight, KFullWidthImageTextOverlay}
     }
 </script>

@@ -1,4 +1,7 @@
+html,
 body {
+  overflow-x: hidden;
+  min-width: 320px;
   margin: 0;
 }
 
@@ -13,6 +16,21 @@ body {
   @media (min-width: 1200px) {
     width: 70%;
   }
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h2, h3 {
