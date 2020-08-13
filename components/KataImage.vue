@@ -15,12 +15,6 @@
 
 </template>
 
-<style scoped lang="scss">
-    .cld-image {
-        background: $s_blue;
-    }
-</style>
-
 <script>
 
     import Vue from "vue";

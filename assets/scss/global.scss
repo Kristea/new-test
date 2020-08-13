@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: 992px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+}
+
+h2, h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+}

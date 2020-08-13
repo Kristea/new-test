@@ -1,52 +1,46 @@
 <template>
-  <page>
-    <template v-slot:main>
-      <div>
-
+    <div class="main-wrapper">
         <component
-        v-for="(slice, i) in pageContent.slices"
-        :key="i"
-        :is="slice.template"
-        :sliceContent="slice">
+                v-for="(slice, i) in pageContent.slices"
+                :key="i"
+                :is="slice.template"
+                :sliceContent="slice">
         </component>
 
-      </div>
+        <test-slice></test-slice>
 
-      <test-slice></test-slice>
-    </template>
-
-  </page>
+        <h2>K Contained Image Full Left, Text Right</h2>
+        <KContainedImgFullLeftTextRight />
+    </div>
 </template>
 
 
-
-
 <script>
-
-export default {
-
-  head() {
-    return {
-      title: this.pageContent.title + ' - ' + 'nrml',
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
+    import KContainedImgFullLeftTextRight from "../components/KContainedImgFullLeftTextRight";
+    export default {
+        components: {KContainedImgFullLeftTextRight},
+        head() {
+            return {
+                title: this.pageContent.title ? this.pageContent.title : 'Kata site',
+                meta: [
+                    // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+                    {hid: 'description', name: 'description', content: 'My custom description'}
+                ]
+            }
+        },
+        data() {
+            return {
+                pageContent: {}
+            }
+        },
+        async asyncData({params, payload}) {
+            let path = params.pathMatch ? params.pathMatch : 'Home'
+            console.log('Path: ' + path)
+            let pageContent = await require(`~/assets/content/pages/${path}.json`)
+            console.log(params)
+            return {
+                pageContent
+            }
+        },
     }
-  },
-  data() {
-    return {
-      pageContent: {}
-    }
-  },
-  async asyncData({ params, payload }) {
-    let path = params.pathMatch ? params.pathMatch : 'Home'
-    console.log('Path: ' + path)
-    let pageContent = await require(`~/assets/content/pages/${path}.json`)
-    console.log(params)
-    return {
-      pageContent
-    }
-  },
-}
 </script>
