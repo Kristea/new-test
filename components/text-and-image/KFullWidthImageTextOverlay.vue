@@ -16,7 +16,11 @@
             //required string - pass in left, center, or right
             TextPosition: {
                 type: String,
-                required: true
+                required: true,
+                validator: function (value) {
+                    // The value must match one of these strings
+                    return ['left', 'center', 'right'].indexOf(value) !== -1
+                }
             },
             title: String,
             desc: String,
