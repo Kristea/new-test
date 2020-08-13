@@ -11,11 +11,10 @@ fields:
   type: blocks
   label: Slices
   template_types:
-  - text-content
-  - showcase
+  - k-text-and-image
   config:
-    min: 
-    max: 
+    min:
+    max:
 pages:
 - assets/content/pages/Home.json
 - assets/content/pages/another.json

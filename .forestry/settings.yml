@@ -15,13 +15,13 @@ sections:
   label: Blog
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - blog-post
 - type: document
   path: assets/content/site-options.json
   label: Site Options
-upload_dir: test
+upload_dir: katasite
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
