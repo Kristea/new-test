@@ -1,12 +1,12 @@
 <template>
-    <div :class="{'k-text-left-img-right': true, container: Container}">
-        <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
-            <img src="https://source.unsplash.com/ylvK73Y4G7o" alt="Test"/>
-        </div>
+    <div :class="{'k-img-left-text-right': true, container: Container}">
         <div class="text" :style="textStyle">
             <h3>Title here</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             <n-link to="/">Call to action</n-link>
+        </div>
+        <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
+            <img src="https://source.unsplash.com/ylvK73Y4G7o" alt="Test"/>
         </div>
     </div>
 </template>
@@ -42,7 +42,7 @@
 </script>
 
 <style scoped lang="scss">
-    .k-text-left-img-right {
+    .k-img-left-text-right {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -64,7 +64,7 @@
 
         &:not(.container){
             .text {
-                padding-right: 5%;
+                padding-left: 5%;
             }
         }
 
@@ -78,7 +78,7 @@
 
         @media (min-width: 700px) {
             .text {
-                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }
