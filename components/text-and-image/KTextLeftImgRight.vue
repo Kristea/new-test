@@ -55,13 +55,13 @@
         justify-content: space-between;
         min-height: 100vh;
 
-        .image img {
-            width: 100%;
-            height: auto;
-        }
-
         .image:not(.img-full){
-            // should these images have a max height? currently just width 100% height auto
+            // should these images have a max height?
+            img {
+                width: 100%;
+                max-height: 50vh;
+                object-fit: cover;
+            }
         }
 
         .img-full {

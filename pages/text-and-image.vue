@@ -10,12 +10,13 @@
                            image="https://source.unsplash.com/random"
                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore." />
 
-        <h2>Full image, image left, text right - padded down</h2>
+        <h2>Full image, image left, text right - padded down and custom link class passed in</h2>
         <div class="custom-slice-padding">
             <KImgLeftTextRight :full-img="true"
                                title="Title here"
                                linkPath="/"
                                linkText="Go Home"
+                               linkClass="black-btn"
                                image="https://source.unsplash.com/random"/>
         </div>
 
