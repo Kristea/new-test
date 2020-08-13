@@ -1,12 +1,12 @@
 <template>
-    <div :class="{'k-img-left-text-right': true, container: Container}">
+    <div :class="{'k-img-left-text-right': true, container: Container}" v-if="title || desc || linkText || image">
         <div class="text" :style="textStyle">
-            <h3>Title here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            <n-link to="/">Call to action</n-link>
+            <h3 v-if="title">{{ title }}</h3>
+            <p v-if="desc">{{ desc }}</p>
+            <n-link :to="linkPath" v-if="linkPath && linkText">{{ linkText }}</n-link>
         </div>
         <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
-            <img src="https://source.unsplash.com/ylvK73Y4G7o" alt="Test"/>
+            <img :src="image" :alt="image"/>
         </div>
     </div>
 </template>
@@ -20,14 +20,19 @@
         props: {
             TextWidth: {
                 type: Number,
-                default: 50
+                default: 50 //percentage of the width
             },
             ImgWidth: {
                 type: Number,
-                default: 50
+                default: 50 //percentage of the width
             },
             Container: Boolean,
-            FullImg: Boolean
+            FullImg: Boolean,
+            title: String,
+            desc: String,
+            image: String,
+            linkPath: String,
+            linkText: String,
         },
         computed: {
             imgStyle() {

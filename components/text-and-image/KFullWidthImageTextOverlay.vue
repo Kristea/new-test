@@ -1,10 +1,11 @@
 <template>
     <div :class="['k-full-width-img-text-overlay', TextPosition ? 'position-' + TextPosition : '']"
-         style="background-image: url('https://source.unsplash.com/random')">
+         :style="`background-image: url('`+imageUrl+`')`"
+         v-if="title || desc || linkText">
         <div class="text-overlay">
-            <h2>We transform your challenges into opportunities</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-            <n-link to="/">Call to action</n-link>
+            <h2 v-if="title">{{ title }}</h2>
+            <p v-if="desc">{{ desc }}</p>
+            <n-link :to="linkPath" v-if="linkPath && linkText">{{ linkText }}</n-link>
         </div>
     </div>
 </template>
@@ -12,10 +13,19 @@
 <script>
     export default {
         props: {
+            //required string - pass in left, center, or right
             TextPosition: {
                 type: String,
                 required: true
-            } //pass in left, center, or right
+            },
+            title: String,
+            desc: String,
+            linkPath: String,
+            linkText: String,
+            imageUrl: {
+                type: String,
+                required: true
+            }
         }
     }
 </script>

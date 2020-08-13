@@ -2,29 +2,60 @@
     <div>
         <h1>Text and Image Slices</h1>
 
-        <h2>Standard text left image right (no props) - should image have max-height when not full?? Or should it have
+        <h2>Standard text left image right (no custom props) - should image have max-height when not full?? Or should it have
             to match height of text??</h2>
-        <KTextLeftImgRight/>
+        <KTextLeftImgRight title="Title here"
+                           linkPath="/"
+                           linkText="Go Home"
+                           image="https://source.unsplash.com/random"
+                           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore." />
 
         <h2>Full image, image left, text right - padded down</h2>
         <div class="custom-slice-padding">
-            <KImgLeftTextRight :full-img="true"/>
+            <KImgLeftTextRight :full-img="true"
+                               title="Title here"
+                               linkPath="/"
+                               linkText="Go Home"
+                               image="https://source.unsplash.com/random"/>
         </div>
 
         <h2>Contained text left image right</h2>
-        <KTextLeftImgRight :Container="true"/>
+        <KTextLeftImgRight :Container="true"
+                           linkPath="/"
+                           linkText="Go Home"
+                           image="https://source.unsplash.com/random"
+                           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
 
         <h2>Contained, full image, two thirds img, one third text</h2>
-        <KTextLeftImgRight :Container="true" :full-img="true" :img-width="66" :text-width="33"/>
+        <KTextLeftImgRight :Container="true"
+                           :full-img="true"
+                           :img-width="66"
+                           :text-width="33"
+                           title="Title here"
+                           linkPath="/"
+                           linkText="Go Home"
+                           image="https://source.unsplash.com/random"
+                           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
 
         <h2>Full Width Image, Text Overlay right</h2>
-        <KFullWidthImageTextOverlay text-position="right"/>
+        <KFullWidthImageTextOverlay text-position="right"
+                                    imageUrl="https://source.unsplash.com/random"
+                                    title="This is a title"/>
 
         <h2>Full Width Image, Text Overlay center</h2>
-        <KFullWidthImageTextOverlay text-position="center"/>
+        <KFullWidthImageTextOverlay text-position="center"
+                                    imageUrl="https://source.unsplash.com/random"
+                                    desc="This is a description"
+                                    linkPath="/"
+                                    linkText="Go Home"/>
 
         <h2>Full Width Image, Text Overlay left</h2>
-        <KFullWidthImageTextOverlay text-position="left"/>
+        <KFullWidthImageTextOverlay text-position="left"
+                                    imageUrl="https://source.unsplash.com/random"
+                                    title="Title is here you should read"
+                                    desc="This is a description"
+                                    linkPath="/"
+                                    linkText="Go Home"/>
     </div>
 </template>
 
