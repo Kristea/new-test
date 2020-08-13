@@ -37,7 +37,6 @@
                 return 'flex-basis: ' + this.TextWidth + '%';
             }
         }
-
     }
 </script>
 
