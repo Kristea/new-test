@@ -6,7 +6,8 @@
         <div class="text" :style="textStyle">
             <h3 v-if="title">{{ title }}</h3>
             <p v-if="desc">{{ desc }}</p>
-            <n-link :to="linkPath" v-if="linkPath && linkText">{{ linkText }}</n-link>
+            <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}
+            </n-link>
         </div>
     </div>
 </template>
@@ -33,6 +34,7 @@
             image: String,
             linkPath: String,
             linkText: String,
+            linkClass: String
         },
         computed: {
             imgStyle() {
@@ -56,6 +58,10 @@
         .image img {
             width: 100%;
             height: auto;
+        }
+
+        .image:not(.img-full){
+            // should these images have a max height? currently just width 100% height auto
         }
 
         .img-full {

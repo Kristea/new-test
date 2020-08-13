@@ -3,7 +3,7 @@
         <div class="text" :style="textStyle">
             <h3 v-if="title">{{ title }}</h3>
             <p v-if="desc">{{ desc }}</p>
-            <n-link :to="linkPath" v-if="linkPath && linkText">{{ linkText }}</n-link>
+            <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}</n-link>
         </div>
         <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
             <img :src="image" :alt="image"/>
@@ -33,6 +33,7 @@
             image: String,
             linkPath: String,
             linkText: String,
+            linkClass: String,
         },
         computed: {
             imgStyle() {

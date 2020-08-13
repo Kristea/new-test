@@ -5,7 +5,7 @@
         <div class="text-overlay">
             <h2 v-if="title">{{ title }}</h2>
             <p v-if="desc">{{ desc }}</p>
-            <n-link :to="linkPath" v-if="linkPath && linkText">{{ linkText }}</n-link>
+            <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}</n-link>
         </div>
     </div>
 </template>
@@ -29,7 +29,8 @@
             imageUrl: {
                 type: String,
                 required: true
-            }
+            },
+            linkClass: String
         }
     }
 </script>
