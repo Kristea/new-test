@@ -13,13 +13,10 @@
 
 <script>
     // Image covers the size of the image container on the left, text is on the right.
-    // can override the padding/margin of the image box and the text box.
+    // can override the padding/margin of the image box and the text box with css
     // can pass in text width and img-width for not 50/50 slices
 
-    import KataImage from "./KataImage";
-
     export default {
-        components: {KataImage},
         props: {
             TextWidth: {
                 type: Number,

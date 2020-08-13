@@ -9,16 +9,12 @@
 
         <test-slice></test-slice>
 
-        <h2>K Contained Image Full Left, Text Right</h2>
-        <KContainedImgFullLeftTextRight />
     </div>
 </template>
 
 
 <script>
-    import KContainedImgFullLeftTextRight from "../components/KContainedImgFullLeftTextRight";
     export default {
-        components: {KContainedImgFullLeftTextRight},
         head() {
             return {
                 title: this.pageContent.title ? this.pageContent.title : 'Kata site',
