@@ -23,8 +23,16 @@
                                image="https://source.unsplash.com/random"/>
         </div>
 
-        <h2 class="container">Contained text left image right</h2>
+        <h2 class="container">Contained text left image right, with frame</h2>
         <KTextLeftImgRight :Container="true"
+                           :imgFrame="true"
+                           linkPath="/"
+                           linkText="Go Home"
+                           image="https://source.unsplash.com/random"
+                           desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
+
+        <h2 class="container">Text left, full image right, with frame</h2>
+        <KTextLeftImgRight :imgFrame="true"
                            linkPath="/"
                            linkText="Go Home"
                            image="https://source.unsplash.com/random"

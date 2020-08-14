@@ -1,6 +1,6 @@
 <template>
     <div :class="{'k-text-left-img-right': true, container: Container}" v-if="title || desc || linkText || image">
-        <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
+        <div :class="{image: true, 'img-full': FullImg, 'img-frame': imgFrame}" :style="imgStyle">
             <KataImage id="sample" />
         </div>
         <div class="text" :style="textStyle">
@@ -36,7 +36,8 @@
             image: String,
             linkPath: String,
             linkText: String,
-            linkClass: String
+            linkClass: String,
+            imgFrame: Boolean,
         },
         computed: {
             imgStyle() {
@@ -78,6 +79,22 @@
         &:not(.container) {
             .text {
                 padding-right: 5%;
+            }
+        }
+
+        .img-frame {
+            position: relative;
+
+            &::after {
+                //override in css
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: black;
+                bottom: -20px;
+                left: -20px;
+                z-index: -1;
             }
         }
 

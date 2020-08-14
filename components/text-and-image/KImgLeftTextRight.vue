@@ -5,7 +5,7 @@
             <p v-if="desc">{{ desc }}</p>
             <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}</n-link>
         </div>
-        <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
+        <div :class="{image: true, 'img-full': FullImg, 'img-frame': imgFrame}" :style="imgStyle">
             <KataImage id="sample" />
         </div>
     </div>
@@ -36,6 +36,7 @@
             linkPath: String,
             linkText: String,
             linkClass: String,
+            imgFrame: Boolean,
         },
         computed: {
             imgStyle() {
@@ -72,6 +73,22 @@
         &:not(.container){
             .text {
                 padding-left: 5%;
+            }
+        }
+
+        .img-frame {
+            position: relative;
+
+            &::after {
+                //override in css
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: black;
+                bottom: -20px;
+                right: -20px;
+                z-index: -1;
             }
         }
 
