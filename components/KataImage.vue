@@ -22,7 +22,7 @@
 
     Vue.use(Cloudinary, {
         configuration: {
-            cloudName: "shoal"
+            cloudName: "floccimages"
         },
         components: [CldImage]
     });

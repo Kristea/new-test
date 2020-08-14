@@ -6,7 +6,7 @@
             <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}</n-link>
         </div>
         <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
-            <img :src="image" :alt="image"/>
+            <KataImage id="sample" />
         </div>
     </div>
 </template>
@@ -16,7 +16,9 @@
     // can override the padding/margin of the image box and the text box with css
     // can pass in text width and img-width for not 50/50 slices
 
+    import KataImage from "../KataImage";
     export default {
+        components: {KataImage},
         props: {
             TextWidth: {
                 type: Number,

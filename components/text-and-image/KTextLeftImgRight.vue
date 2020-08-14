@@ -1,7 +1,7 @@
 <template>
     <div :class="{'k-text-left-img-right': true, container: Container}" v-if="title || desc || linkText || image">
         <div :class="{image: true, 'img-full': FullImg}" :style="imgStyle">
-            <img :src="image" :alt="image"/>
+            <KataImage id="sample" />
         </div>
         <div class="text" :style="textStyle">
             <h3 v-if="title">{{ title }}</h3>
@@ -17,7 +17,9 @@
     // can override the padding/margin of the image box and the text box with css
     // can pass in text width and img-width for not 50/50 slices
 
+    import KataImage from "../KataImage";
     export default {
+        components: {KataImage},
         props: {
             TextWidth: {
                 type: Number,
