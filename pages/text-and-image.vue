@@ -11,7 +11,7 @@
             <KTextLeftImgRight title="Title here"
                                linkPath="/"
                                linkText="Go Home"
-                               image="https://source.unsplash.com/random"
+                               image="sample"
                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
         </div>
 
@@ -23,7 +23,7 @@
                                    linkPath="/"
                                    linkText="Go Home"
                                    linkClass="black-btn"
-                                   image="https://source.unsplash.com/random"/>
+                                   image="sample"/>
             </div>
         </div>
 
@@ -33,7 +33,7 @@
                                :imgFrame="true"
                                linkPath="/"
                                linkText="Go Home"
-                               image="https://source.unsplash.com/random"
+                               image="sample"
                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
         </div>
 
@@ -42,7 +42,7 @@
             <KTextLeftImgRight :imgFrame="true"
                                linkPath="/"
                                linkText="Go Home"
-                               image="https://source.unsplash.com/random"
+                               image="sample"
                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
         </div>
 
@@ -55,21 +55,21 @@
                                title="Title here"
                                linkPath="/"
                                linkText="Go Home"
-                               image="https://source.unsplash.com/random"
+                               image="sample"
                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
         </div>
 
         <div class="section">
             <h2 class="container">Full Width Image, Text Overlay right</h2>
             <KFullWidthImageTextOverlay text-position="right"
-                                        imageUrl="https://source.unsplash.com/random"
+                                        imageUrl="https://res.cloudinary.com/floccimages/image/upload/v1597412213/cta_fnmsoe.jpg"
                                         title="This is a title"/>
         </div>
 
         <div class="section">
             <h2 class="container">Full Width Image, Text Overlay center</h2>
             <KFullWidthImageTextOverlay text-position="center"
-                                        imageUrl="https://source.unsplash.com/random"
+                                        imageUrl="https://res.cloudinary.com/floccimages/image/upload/v1597412213/cta_fnmsoe.jpg"
                                         desc="This is a description"
                                         linkPath="/"
                                         linkText="Go Home"/>
@@ -78,7 +78,7 @@
         <div class="section">
             <h2 class="container">Full Width Image, Text Overlay left</h2>
             <KFullWidthImageTextOverlay text-position="left"
-                                        imageUrl="https://source.unsplash.com/random"
+                                        imageUrl="https://res.cloudinary.com/floccimages/image/upload/v1597412213/cta_fnmsoe.jpg"
                                         title="Title is here you should read"
                                         desc="This is a description"
                                         linkPath="/"

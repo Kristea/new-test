@@ -1,13 +1,12 @@
 <template>
-    <div :class="{'k-text-left-img-right': true, container: Container}" v-if="title || desc || linkText || image">
-        <div :class="{image: true, 'img-full': FullImg, 'img-frame': imgFrame}" :style="imgStyle">
-            <KataImage :id="image" />
-        </div>
+    <div :class="{'k-img-left-text-right-padding': true}" v-if="title || desc || linkText || image">
         <div class="text" :style="textStyle">
             <h3 v-if="title">{{ title }}</h3>
             <p v-if="desc">{{ desc }}</p>
-            <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}
-            </n-link>
+            <n-link :to="linkPath" v-if="linkPath && linkText" :class="[linkClass ? linkClass : '']">{{ linkText }}</n-link>
+        </div>
+        <div :class="{image: true, 'img-full': FullImg, 'img-frame': imgFrame}" :style="imgStyle">
+            <KataImage id="sample" />
         </div>
     </div>
 </template>
@@ -21,15 +20,22 @@
     export default {
         components: {KataImage},
         props: {
+            padLeft: {
+                type: Number,
+                default: 0 //percentage of the width
+            },
+            padRight: {
+                type: Number,
+                default: 0 //percentage of the width
+            },
             TextWidth: {
                 type: Number,
-                default: 50
+                default: 50 //percentage of the width
             },
             ImgWidth: {
                 type: Number,
-                default: 50
+                default: 50 //percentage of the width
             },
-            Container: Boolean,
             FullImg: Boolean,
             title: String,
             desc: String,
@@ -41,30 +47,25 @@
         },
         computed: {
             imgStyle() {
-                return 'flex-basis: ' + this.ImgWidth + '%';
+                return 'flex-basis: ' + this.ImgWidth + '%;'+'margin-right: ' + this.padRight + '%';
             },
             textStyle() {
-                return 'flex-basis: ' + this.TextWidth + '%';
-            }
+                return 'flex-basis: ' + this.TextWidth + '%;'+'margin-left: ' + this.padLeft + '%';
+            },
         }
-
     }
 </script>
 
 <style scoped lang="scss">
-    .k-text-left-img-right {
+    .k-img-left-text-right-padding {
         display: flex;
         align-items: center;
         justify-content: space-between;
         min-height: 100vh;
 
-        .image:not(.img-full){
-            // should these images have a max height?
-            img {
-                width: 100%;
-                max-height: 50vh;
-                object-fit: cover;
-            }
+        .image img {
+            width: 100%;
+            height: auto;
         }
 
         .img-full {
@@ -76,9 +77,9 @@
             }
         }
 
-        &:not(.container) {
+        &:not(.container){
             .text {
-                padding-right: 5%;
+                /*padding-left: 5%;*/
             }
         }
 
@@ -93,7 +94,7 @@
                 height: 100%;
                 background: black;
                 bottom: -20px;
-                left: -20px;
+                right: -20px;
                 z-index: -1;
             }
         }
@@ -103,12 +104,16 @@
             .image, .text {
                 flex-basis: 100% !important;
                 max-width: 100% !important;
+                margin: 0 !important;
+            }
+            .text {
+                padding: 0 30px;
             }
         }
 
         @media (min-width: 700px) {
             .text {
-                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }
