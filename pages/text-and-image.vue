@@ -3,9 +3,11 @@
         <div class="container">
             <h1>Text and Image Slices</h1>
         </div>
+
         <div class="section">
             <h2 class="container">Standard text left image right (no custom props)</h2>
-            <p class="container">Should image have max-height when not full?? Or should it have to match height of text??</p>
+            <p class="container">Should image have max-height when not full?? Or should it have to match height of
+                text??</p>
             <KTextLeftImgRight title="Title here"
                                linkPath="/"
                                linkText="Go Home"
