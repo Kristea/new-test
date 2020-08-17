@@ -17,6 +17,12 @@
       <li>
         <n-link to="/blog">Blog</n-link>
       </li>
+      <li>
+        <n-link to="/container-concepts">Containers</n-link>
+      </li>
+      <li>
+        <n-link to="/text-and-image">Text & Image</n-link>
+      </li>
     </ul>
 
   </div>
@@ -32,3 +38,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+}
+</style>
