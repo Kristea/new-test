@@ -23,6 +23,9 @@
       <li>
         <n-link to="/text-and-image">Text & Image</n-link>
       </li>
+      <li>
+        <n-link to="/text-and-image2">Text & Image #2</n-link>
+      </li>
     </ul>
 
   </div>

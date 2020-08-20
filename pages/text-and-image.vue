@@ -8,11 +8,13 @@
             <h2 class="container">Standard text left image right (no custom props)</h2>
             <p class="container">Should image have max-height when not full?? Or should it have to match height of
                 text??</p>
-            <KTextLeftImgRight title="Title here"
-                               linkPath="/"
-                               linkText="Go Home"
-                               image="sample"
-                               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."/>
+            <KTextLeftImgRight
+              title="Title here"
+              linkPath="/"
+              linkText="Go Home"
+              image="sample"
+              desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+            />
         </div>
 
         <div class="section">
