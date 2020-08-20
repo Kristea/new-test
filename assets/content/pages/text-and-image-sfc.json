@@ -16,7 +16,9 @@
       "image": "/v1596745569/katasite/sportspark_fseyn2.jpg",
       "options": {
         "textposition": " right",
-        "imagestyle": "full-bleed-100"
+        "imagestyle": "full-bleed-100",
+        "textPosition": " right",
+        "imageStyle": "full-bleed-100"
       }
     }
   ]

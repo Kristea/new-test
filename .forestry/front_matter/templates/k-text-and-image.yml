@@ -48,7 +48,7 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: textposition
+  - name: textPosition
     type: select
     default: left
     config:
@@ -61,8 +61,8 @@ fields:
         section: 
         file: 
         path: 
-    label: textPosition
-  - name: imagestyle
+    label: Text position
+  - name: imageStyle
     type: select
     default: normal
     config:
@@ -78,5 +78,5 @@ fields:
         section: 
         file: 
         path: 
-    label: imageStyle
+    label: Image style
   label: Options
