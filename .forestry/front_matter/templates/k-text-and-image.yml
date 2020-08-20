@@ -55,7 +55,7 @@ fields:
       required: true
       options:
       - left
-      - " right"
+      - right
       source:
         type: simple
         section: 
