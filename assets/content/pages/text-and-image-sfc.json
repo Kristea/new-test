@@ -17,8 +17,8 @@
       "options": {
         "textposition": " right",
         "imagestyle": "full-bleed-100",
-        "textPosition": "right",
-        "imageStyle": "full-bleed-100"
+        "textPosition": "left",
+        "imageStyle": "tall"
       }
     }
   ]
