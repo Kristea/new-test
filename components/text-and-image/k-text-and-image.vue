@@ -23,16 +23,28 @@
     },
     computed: {
       headline: function() {
-        return this.sliceContent.headline ? this.sliceContent.headline : null
+        return this.sliceData.headline ? this.sliceData.headline : null
       },
       content: function() {
-        return this.sliceContent.content ? this.sliceContent.content : null
+        return this.sliceData.content ? this.sliceData.content : null
       },
       image: function() {
-        return this.sliceContent.image ? this.sliceContent.image : null
+        let path = this.sliceData.image ? this.sliceData.image : null
+
+        return path[0] == '/' ? path.slice(1) : path
+
+        // the leading trailing slash in the path from forestry breaks cloudinary URLs...
+
+
       },
       cta: function() {
-        return this.sliceContent.cta ? this.sliceContent.cta : null
+        return this.sliceData.cta ? this.sliceData.cta : null
+      },
+      textPosition: function() {
+        return this.sliceData.options.textPosition ? this.sliceData.options.textPosition : null
+      },
+      imageStyle: function() {
+        return this.sliceData.options.imageStyle ? this.sliceData.options.imageStyle : null
       },
       wrapperClass: function() {
         let wrapperClass = ''
@@ -42,7 +54,7 @@
         return wrapperClass
       },
       fullBleed: function() {
-        return this.imageStyle.includes('full-bleed' )
+        return this.imageStyle ? this.imageStyle.includes('full-bleed' ) : null
       },
       wrapperStyle: function() {
         // if ( this.fullBleed ) {
@@ -54,24 +66,24 @@
       }
     },
     props: {
-      sliceContent: {
+      sliceData: {
         type: Object,
         required: true
       },
-      textPosition: {
-        type: String,
-        default: 'left',
-        validator: function (value) {
-          return ['left', 'right'].indexOf(value) !== -1
-        }
-      },
-      imageStyle: {
-        type: String,
-        default: 'normal',
-        validator: function (value) {
-          return ['normal', 'tall', 'square', 'full-bleed-50', 'full-bleed-100'].indexOf(value) !== -1
-        }
-      },
+      // textPosition: {
+      //   type: String,
+      //   default: 'left',
+      //   validator: function (value) {
+      //     return ['left', 'right'].indexOf(value) !== -1
+      //   }
+      // },
+      // imageStyle: {
+      //   type: String,
+      //   default: 'normal',
+      //   validator: function (value) {
+      //     return ['normal', 'tall', 'square', 'full-bleed-50', 'full-bleed-100'].indexOf(value) !== -1
+      //   }
+      // },
 
 
     },

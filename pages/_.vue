@@ -4,7 +4,7 @@
                 v-for="(slice, i) in pageContent.slices"
                 :key="i"
                 :is="slice.template"
-                :sliceContent="slice">
+                :sliceData="slice">
         </component>
 
         <test-slice></test-slice>
