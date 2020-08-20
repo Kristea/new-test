@@ -9,7 +9,9 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-  new_doc_ext: json
+  new_doc_ext: ".md"
+  templates:
+  - slices
 - type: directory
   path: assets/content/blog
   label: Blog
