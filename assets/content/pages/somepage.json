@@ -4,6 +4,18 @@
   "html_title": "",
   "meta_description": "",
   "slices": [
+    {
+      "template": "k-text-and-image",
+      "cta": {
+        "select_link": [
 
+        ],
+        "text": "",
+        "link": ""
+      },
+      "headline": "asdsdf",
+      "content": "gdfgert34",
+      "image": "/v1597915692/katasite/flower_nfctfl.jpg"
+    }
   ]
 }
