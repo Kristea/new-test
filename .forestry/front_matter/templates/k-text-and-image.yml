@@ -44,3 +44,39 @@ fields:
         path: 
     label: Select link
   description: Call to action link
+- name: options
+  type: field_group
+  config: {}
+  fields:
+  - name: textposition
+    type: select
+    default: left
+    config:
+      required: true
+      options:
+      - left
+      - " right"
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: textPosition
+  - name: imagestyle
+    type: select
+    default: normal
+    config:
+      required: true
+      options:
+      - normal
+      - tall
+      - square
+      - full-bleed-50
+      - full-bleed-100
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: imageStyle
+  label: Options

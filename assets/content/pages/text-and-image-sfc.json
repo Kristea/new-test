@@ -13,7 +13,11 @@
       },
       "headline": "Headline",
       "content": "Content",
-      "image": "/v1596745569/katasite/sportspark_fseyn2.jpg"
+      "image": "/v1596745569/katasite/sportspark_fseyn2.jpg",
+      "options": {
+        "textposition": " right",
+        "imagestyle": "full-bleed-100"
+      }
     }
   ]
 }
