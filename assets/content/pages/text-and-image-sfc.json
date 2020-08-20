@@ -1,0 +1,19 @@
+{
+  "path": "/",
+  "page_title": "Text and image SFC",
+  "html_title": "",
+  "meta_description": "",
+  "slices": [
+    {
+      "template": "k-text-and-image",
+      "cta": {
+        "select_link": "assets/content/pages/folder/cool-new-page.json",
+        "text": "Go here, its great",
+        "link": ""
+      },
+      "headline": "Headline",
+      "content": "Content",
+      "image": "/v1596745569/katasite/sportspark_fseyn2.jpg"
+    }
+  ]
+}

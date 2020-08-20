@@ -13,9 +13,10 @@ fields:
   template_types:
   - k-text-and-image
   config:
-    min:
-    max:
+    min: 
+    max: 
 pages:
 - assets/content/pages/Home.json
 - assets/content/pages/another.json
 - assets/content/pages/folder/cool-new-page.json
+- assets/content/pages/text-and-image-sfc.json
