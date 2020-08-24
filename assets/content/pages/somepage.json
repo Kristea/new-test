@@ -15,7 +15,11 @@
       },
       "headline": "asdsdf",
       "content": "gdfgert34",
-      "image": "/v1597915692/katasite/flower_nfctfl.jpg"
+      "image": "/v1597915692/katasite/flower_nfctfl.jpg",
+      "options": {
+        "textPosition": "left",
+        "imageStyle": "normal"
+      }
     }
   ]
 }
