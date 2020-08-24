@@ -4,13 +4,18 @@
       "template": "k-text-and-image",
       "cta": {
         "select_link": [
+
         ],
         "text": "Buy me!",
         "link": "https://google.com"
       },
       "headline": "Heading the slices!",
       "content": "Oh, this is perhaps the wrong type of text field?",
-      "image": "/katasite/sportspark_fseyn2.jpg"
+      "image": "/katasite/sportspark_fseyn2.jpg",
+      "options": {
+        "textPosition": "left",
+        "imageStyle": "normal"
+      }
     }
   ],
   "page_title": "Home",
