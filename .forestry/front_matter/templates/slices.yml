@@ -19,7 +19,6 @@ pages:
 - assets/content/pages/Home.json
 - assets/content/pages/another.json
 - assets/content/pages/folder/cool-new-page.json
-- assets/content/pages/footers.json.md
 - assets/content/pages/markdown.md
 - assets/content/pages/somepage.json
 - assets/content/pages/text-and-image-sfc.json
