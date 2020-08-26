@@ -20,9 +20,12 @@ sections:
   new_doc_ext: md
   templates:
   - blog-post
+- type: heading
+  label: Settings
 - type: document
   path: assets/content/site-options.json
   label: Site Options
+  read_only: false
 upload_dir: katasite
 public_path: ''
 front_matter_path: ''
