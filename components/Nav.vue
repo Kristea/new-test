@@ -26,6 +26,9 @@
       <li>
         <n-link to="/text-and-image2">Text & Image #2</n-link>
       </li>
+      <li>
+        <n-link to="/footers">Footers</n-link>
+      </li>
     </ul>
 
   </div>

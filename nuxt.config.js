@@ -1,4 +1,3 @@
-
 export default {
   mode: 'universal',
   target: 'static',
@@ -8,23 +7,23 @@ export default {
   head: {
     title: process.env.npm_package_name || 'Kata Site',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: process.env.npm_package_description || ''}
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
     ]
   },
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: {color: '#fff'},
   /*
   ** Global CSS
   */
   css: [
-      '~assets/scss/global.scss'
+    '~assets/scss/global.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -37,7 +36,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-      '@nuxt/content', // Doc: https://github.com/nuxt/content
+    '@nuxt/content', // Doc: https://github.com/nuxt/content
     '@nuxtjs/style-resources',
   ],
   /*
@@ -53,15 +52,15 @@ export default {
   ** Content module configuration
   ** See https://content.nuxtjs.org/configuration
   */
- content: {
-  dir: 'assets/content'
- },
+  content: {
+    dir: 'assets/content'
+  },
   styleResources: {
-   // WARNING - DO NOT IMPORT ACTUAL CSS STYLES HERE! They would be imported into EVERY component!!
+    // WARNING - DO NOT IMPORT ACTUAL CSS STYLES HERE! They would be imported into EVERY component!!
     // https://github.com/nuxt-community/style-resources-module#warning
-   sass: [
-     "bulma/sass/utilities/_all.sass"
-   ]
+    sass: [
+      "bulma/sass/utilities/_all.sass"
+    ]
   },
   components: true,
   /*
@@ -72,9 +71,8 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
+    extend(config, ctx) {
     }
   },
-  generate: {
-  },
+  generate: {},
 }

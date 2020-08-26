@@ -4,7 +4,6 @@
       "template": "k-text-and-image",
       "cta": {
         "select_link": [
-
         ],
         "text": "Buy me!",
         "link": "https://google.com"
@@ -13,8 +12,7 @@
       "content": "Oh, this is perhaps the wrong type of text field?",
       "image": "/katasite/sportspark_fseyn2.jpg",
       "options": {
-        "textPosition": "left",
-        "imageStyle": "normal"
+        "textPosition": "left"
       }
     }
   ],

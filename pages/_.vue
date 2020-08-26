@@ -7,7 +7,6 @@
                 :sliceData="slice">
         </component>
 
-        <test-slice></test-slice>
 
     </div>
 </template>
@@ -17,7 +16,7 @@
     export default {
         head() {
             return {
-                title: this.pageContent.title ? this.pageContent.title : 'Kata site',
+                title: this.pageContent.page_title ? this.pageContent.page_title : 'Kata site',
                 meta: [
                     // hid is used as unique identifier. Do not use `vmid` for it as it will not work
                     {hid: 'description', name: 'description', content: 'My custom description'}

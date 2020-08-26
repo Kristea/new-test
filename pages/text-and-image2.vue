@@ -1,24 +1,24 @@
 <template>
   <page v-slot:main>
     <div>
-        <div class="container">
-            <h1>Text and Image Slices</h1>
-        </div>
+      <div class="container">
+        <h1>Text and Image Slices</h1>
+      </div>
 
       <k-text-and-image
-        :sliceContent="sliceContent"
+        :sliceData="sliceContent"
         text-position="right"
       />
 
       <k-text-and-image
-        :sliceContent="sliceContent"
+        :sliceData="sliceContent"
         text-position="left"
         image-style="tall"
       />
 
 
       <k-text-and-image
-        :sliceContent="sliceContent"
+        :sliceData="sliceContent"
         text-position="right"
         image-style="full-bleed-100"
       />
@@ -33,45 +33,47 @@
     import KFullWidthImageTextOverlay from "../components/text-and-image/KFullWidthImageTextOverlay";
 
     export default {
-      components: {KTextLeftImgRight, KImgLeftTextRight, KFullWidthImageTextOverlay},
+        components: {KTextLeftImgRight, KImgLeftTextRight, KFullWidthImageTextOverlay},
         data() {
-          return {
-            sliceContent: {
-              "template": "text-and-image",
-              "cta": {
-                "select_link": [
-
-                ],
-                "text": "Buy me!",
-                "link": "https://google.com"
-              },
-              "headline": "Heading the slices!",
-              "content": "Oh, this is perhaps the wrong type of text field?",
-              "image": "sample"
-            },
-            sliceClasses: ''
-          }
+            return {
+                sliceContent: {
+                    "template": "text-and-image",
+                    "cta": {
+                        "select_link": [],
+                        "text": "Buy me!",
+                        "link": "https://google.com"
+                    },
+                    "headline": "Heading the slices!",
+                    "content": "Oh, this is perhaps the wrong type of text field?",
+                    "image": "sample",
+                    "options": {
+                        "textPosition":"right"
+                    }
+                },
+                sliceClasses: ''
+            }
         }
     }
 </script>
 
 <style lang="scss">
-    .custom-slice-padding {
-        .k-img-left-text-right .img-full {
-            img {
-                padding-top: 20%;
-                height: 100vh;
-                object-fit: cover;
-            }
-        }
-        .k-img-left-text-right:not(.container) .text {
-            padding-left: 15%;
-        }
+  .custom-slice-padding {
+    .k-img-left-text-right .img-full {
+      img {
+        padding-top: 20%;
+        height: 100vh;
+        object-fit: cover;
+      }
     }
 
-    .section {
-        border-bottom: dashed 1px black;
-        padding-bottom: 1rem;
-        margin-bottom: 1rem;
+    .k-img-left-text-right:not(.container) .text {
+      padding-left: 15%;
     }
+  }
+
+  .section {
+    border-bottom: dashed 1px black;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 </style>

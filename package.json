@@ -1,35 +1,35 @@
 {
-    "name": "katasite",
-    "version": "0.1.0",
-    "description": "The starting point for kata sites",
-    "author": "flocc",
-    "private": true,
-    "scripts": {
-        "dev": "nuxt",
-        "build": "nuxt build",
-        "start": "nuxt start",
-        "generate": "nuxt generate",
-        "serve": "nuxt serve"
-    },
-    "dependencies": {
-        "@nuxt/content": "^1.5.*",
-        "@nuxtjs/markdownit": "^1.2.*",
-        "@nuxtjs/style-resources": "^1.0.*",
-        "@weflocc/kata-footer": "^1.0.2",
-        "@weflocc/kata-image": "^1.0.*",
-        "@weflocc/kata-text-and-image": "^1.0.5",
-        "bulma": "^0.9.*",
-        "cloudinary-vue": "^1.1.*",
-        "kataslice-test": "git+https://github.com/weflocc/kata-test-slice.git",
-        "nuxt": "^2.14.*",
-        "vue": "^2.6.11"
-    },
-    "devDependencies": {
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "node-sass": "^4.14.1",
-        "prettier": "^2.0.5",
-        "sass-loader": "^9.0.2",
-        "webpack-bundle-analyzer": "^3.8.0"
-    }
+  "name": "katasite",
+  "version": "0.1.0",
+  "description": "The starting point for kata sites",
+  "author": "flocc",
+  "private": true,
+  "repository": "git://github.com/weflocc/",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "serve": "nuxt serve"
+  },
+  "dependencies": {
+    "@nuxt/content": "^1.5.*",
+    "@nuxtjs/markdownit": "^1.2.*",
+    "@nuxtjs/style-resources": "^1.0.*",
+    "@weflocc/kata-footer": "^1.0.2",
+    "@weflocc/kata-image": "^1.0.*",
+    "@weflocc/kata-text-and-image": "^1.0.5",
+    "bulma": "^0.9.*",
+    "cloudinary-vue": "^1.1.*",
+    "nuxt": "^2.14.3",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^9.0.2",
+    "webpack-bundle-analyzer": "^3.8.0"
+  }
 }
